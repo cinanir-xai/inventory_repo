@@ -113,7 +113,31 @@ Add at least these test files under `tests/InventoryCore.Tests/`. Use xUnit `[Fa
 - Iteration over `Dictionary`, recipe lists, world entities, and slots must be deterministic in observable behavior. If you use `HashSet` anywhere whose enumeration order is observable, replace it.
 - All `IsInstanceSpecific==true` properties NEVER merge under any operation, ever.
 
-# 10. Out of scope (do NOT implement)
+# 10. CLI manual-test surface
+
+Extend `src/InventoryCore.Cli/Program.cs` with the following commands so a
+human can exercise every new subsystem from the terminal. All existing
+commands (add, remove, count, list, items, quit) keep working unchanged.
+
+  cursor                              show what's on the cursor
+  leftclick <slot>                    left-click slot N
+  rightclick <slot>                   right-click slot N
+  shiftclick <slot>                   shift-click slot N (in-inventory flip)
+  drag-spread <slot1,slot2,...>       drag-spread cursor across slots
+  drag-single <slot1,slot2,...>       drag-single (one item per slot)
+  drop <slot> <amount>                drop items into the world at (0,0,0)
+  pickup                              attempt pickup from world near (0,0,0)
+  world                               list world entities (id, count, age)
+  tick <dtSeconds>                    advance world + furnace by dt seconds
+  craftgrid <cell> <itemId> <count>   set crafting grid cell (cell 0-8, 3x3)
+  craftgrid clear                     empty the crafting grid
+  craft                               try to craft using current grid
+  furnace input <itemId> <count>      set furnace input slot
+  furnace fuel  <itemId> <count>      set furnace fuel slot
+  furnace status                      print burn time, cook progress, output
+  save                                print serialized JSON of the inventory
+
+# 11. Out of scope (do NOT implement)
 
 - Networking, multiplayer, or save files on disk (persistence is in-memory string blobs only).
 - A real game loop, threading, or async. Tick is a single synchronous call driven by the test.
