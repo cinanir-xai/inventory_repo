@@ -1,0 +1,11 @@
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\bin\Debug\net8.0\InventoryCore.deps.json
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\bin\Debug\net8.0\InventoryCore.dll
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\bin\Debug\net8.0\InventoryCore.pdb
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\obj\Debug\net8.0\InventoryCore.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\obj\Debug\net8.0\InventoryCore.AssemblyInfoInputs.cache
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\obj\Debug\net8.0\InventoryCore.AssemblyInfo.cs
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\obj\Debug\net8.0\InventoryCore.csproj.CoreCompileInputs.cache
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\obj\Debug\net8.0\InventoryCore.dll
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\obj\Debug\net8.0\refint\InventoryCore.dll
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\obj\Debug\net8.0\InventoryCore.pdb
+C:\Users\Admin\Desktop\InventoryCore\src\InventoryCore\obj\Debug\net8.0\ref\InventoryCore.dll
